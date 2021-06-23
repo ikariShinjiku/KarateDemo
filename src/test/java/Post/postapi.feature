@@ -5,9 +5,9 @@ Feature: to test a get API
   @Value
   #Testing the post function
   Scenario: Testing the get API
-    And path '/GET'
-    And param Price = 5000
-    And param Coupon = 5
-    When method get
+    Given path '/POST'
+    And param Coupon = 0.05
+    And request { Price: 5000, Face: 5 }
+    When method post
     Then status 200
-    And match response.Coupon == 0.005
+    And match response == {"Price": 5000, "Face": 5, "Result": 23750.0}

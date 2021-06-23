@@ -1,5 +1,3 @@
-package feature;
-
 import com.intuit.karate.junit5.Karate;
 import org.testng.annotations.Test;
 
