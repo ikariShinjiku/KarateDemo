@@ -1,5 +1,5 @@
-import com.intuit.karate.junit5.Karate;
-import org.testng.annotations.Test;
+import junit5.Karate;
+
 
 public class TestRunner {
     @Karate.Test

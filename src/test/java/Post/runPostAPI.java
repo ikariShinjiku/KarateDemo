@@ -1,6 +1,6 @@
 package Post;
 
-import com.intuit.karate.junit5.Karate;
+import junit5.Karate;
 
 public class runPostAPI {
     @Karate.Test
